@@ -25,7 +25,6 @@
         };
 
         $.ajax({
-            //url: 'http://www.66super.com/api/chat/send.do',
             url: 'http://localhost:8080/api/chat/send',
             type: "POST",
             contentType: "application/json",
