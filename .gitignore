@@ -1,0 +1,4 @@
+.idea
+turing/target/**
+*.class
+turing/turing-chat.iml

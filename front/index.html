@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>超锅机器人V1.0</title>
+	<link rel="stylesheet" href="css/stylesheets/style.css">
+	<script src="js/jquery172.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<style rel="stylesheet">
+		::-webkit-scrollbar {
+			width: 14px;
+			height: 14px;
+		}
+
+		::-webkit-scrollbar-track,
+		::-webkit-scrollbar-thumb {
+			border-radius: 999px;
+			border: 5px solid transparent;
+		}
+
+		::-webkit-scrollbar-track {
+			box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;
+		}
+
+		::-webkit-scrollbar-thumb {
+			min-height: 20px;
+			background-clip: content-box;
+			box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;
+		}
+
+		::-webkit-scrollbar-corner {
+			background: transparent;
+		}
+
+		#background {
+			/*background: contain;*/
+		}
+
+		#playlist li:nth-of-type(odd){ color:#00FF00;}
+		#playlist li:nth-of-type(even){ color:#FF0000;}
+		#playlist li:hover{ color:#00FFFF;font-size: 20px;}
+        #sendDiv button:hover{background: #b5b59d}
+	</style>
+</head>
+<body>
+<center>
+     
+  </center>
+	<div id="background" style="background-repeat: no-repeat"></div>
+	<div id="player" style="text-align: center;font-size: 35px;">
+		<div style="width: auto;height: auto;float: left">
+		<img style="width:150px;height:150px;" src="images/superman2.gif">
+		</div>
+        <div>
+			超锅的AI v1.0
+			<p>Powered by <a href="http://www.66super.com">www.66super.com</a></p>
+		</div>
+		<!--超锅的AI v1.0
+		<p>Powered by <a href="http://www.66super.com">www.66super.com</a></p>-->
+	</div>
+	<ul id="playlist" style="height: 300px;overflow-y: auto"></ul>
+
+	<footer>
+		<div id="sendDiv" style="z-index: 999">
+			<input id="inputValue" style="color: #0bb20c;font-size: 38px">
+			<button id="btSend" style="color: #00ff00;font-size: 18px">发送</button>
+		</div>
+	</footer>
+
+	<script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
