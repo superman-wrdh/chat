@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{yyyy-MM-dd} %d{ABSOLUTE}] [%5p] [%c:%L] %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <logger name="cn.geneapps" level="debug" additivity="false">
+            <appender-ref ref="Console"/>
+        </logger>
+        <root level="error">
+            <appender-ref ref="Console"/>
+        </root>
+    </Loggers>
+</Configuration>
